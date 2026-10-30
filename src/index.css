@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #2A2A30;
+  }
+  
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-smooth iframe {
+    pointer-events: none;
+  }
+
+  body {
+    background-color: #0A0A0C;
+    color: #F4F4F6;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  /* Custom Industrial Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0A0A0C;
+    border-left: 1px solid #2A2A30;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2A2A30;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #CCFF00;
+  }
+}
+
+/* Background Grids & Technical Patterns */
+.bg-tech-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(42, 42, 48, 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(42, 42, 48, 0.45) 1px, transparent 1px);
+}
+
+.bg-tech-grid-dense {
+  background-size: 16px 16px;
+  background-image: 
+    linear-gradient(to right, rgba(42, 42, 48, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(42, 42, 48, 0.3) 1px, transparent 1px);
+}
+
+.bg-dots {
+  background-image: radial-gradient(rgba(204, 255, 0, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Hazard Warning Stripes */
+.hazard-orange {
+  background: repeating-linear-gradient(
+    -45deg,
+    #FF3B00,
+    #FF3B00 10px,
+    #0A0A0C 10px,
+    #0A0A0C 20px
+  );
+}
+
+.hazard-volt {
+  background: repeating-linear-gradient(
+    -45deg,
+    #CCFF00,
+    #CCFF00 8px,
+    #0A0A0C 8px,
+    #0A0A0C 16px
+  );
+}
+
+/* Technical Corner Markings */
+.bracket-corners {
+  position: relative;
+}
+.bracket-corners::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #CCFF00;
+  border-left: 2px solid #CCFF00;
+  pointer-events: none;
+}
+.bracket-corners::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #CCFF00;
+  border-right: 2px solid #CCFF00;
+  pointer-events: none;
+}
+
+.bracket-corners-orange::before {
+  border-color: #FF3B00;
+}
+.bracket-corners-orange::after {
+  border-color: #FF3B00;
+}
+
+/* Crosshair Indicator */
+.crosshair-mark {
+  position: relative;
+}
+.crosshair-mark::before,
+.crosshair-mark::after {
+  content: '';
+  position: absolute;
+  background-color: #8E8E93;
+}
+.crosshair-mark::before {
+  width: 12px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.crosshair-mark::after {
+  width: 1px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Glitch and glowing buttons */
+.btn-volt {
+  background-color: transparent;
+  color: #CCFF00;
+  border: 1px solid #CCFF00;
+  box-shadow: 0 0 15px -3px rgba(204, 255, 0, 0.35);
+  transition: all 0.2s ease;
+}
+.btn-volt:hover {
+  background-color: #CCFF00;
+  color: #0A0A0C;
+  box-shadow: 0 0 25px 2px rgba(204, 255, 0, 0.6);
+}
+
+.btn-orange {
+  background-color: transparent;
+  color: #FF3B00;
+  border: 1px solid #FF3B00;
+  box-shadow: 0 0 15px -3px rgba(255, 59, 0, 0.35);
+  transition: all 0.2s ease;
+}
+.btn-orange:hover {
+  background-color: #FF3B00;
+  color: #0A0A0C;
+  box-shadow: 0 0 25px 2px rgba(255, 59, 0, 0.6);
+}
+
+/* Ruler Tape Vertical Measurement */
+.tech-ruler-v {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #2A2A30,
+    #2A2A30 1px,
+    transparent 1px,
+    transparent 8px
+  );
+}

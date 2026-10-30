@@ -1,0 +1,26 @@
+# Robots.txt for KNTX LAB (https://kntx.lab)
+# Engineered for Concrete — Official High-Density Urban Techwear Store
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /favicon.ico
+Allow: /favicon.svg
+Allow: /site.webmanifest
+Allow: /apple-touch-icon.png
+Allow: /og-image.webp
+Allow: /icon-192.png
+Allow: /icon-512.png
+
+# Crawl-delay for polite scraping
+Crawl-delay: 1
+
+# Disallow private/admin endpoints
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /checkout/session/
+
+# Sitemap index
+Sitemap: https://kntx.lab/sitemap.xml
+Host: https://kntx.lab

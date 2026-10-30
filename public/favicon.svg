@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256"><title>KNTX LAB Symbol</title><g transform="translate(-45.68 -43.01) scale(1.336)" fill="none">
+  
+  <!-- Monolithic Vertical Pillar with 45-deg chamfer -->
+  <path d="M44 60 L68 36 H96 V220 H44 V60 Z" fill="#F4F4F6"/>
+  <!-- Upper Arm White Beam (Exact 45-deg) -->
+  <polygon points="112,120 196,36 156,36 112,80" fill="#F4F4F6"/>
+  <!-- Volt Energy Apex Triangle (Exact 45-deg right-triangle) -->
+  <polygon points="168,36 216,36 216,84" fill="#CCFF00"/>
+  <!-- Lower Strut White Beam (Exact 45-deg) -->
+  <polygon points="112,136 196,220 156,220 112,176" fill="#F4F4F6"/>
+  <!-- Volt Secondary Stabilizer Chevron -->
+  <polygon points="172,220 216,220 216,176" fill="#8E8E93"/>
+</g></svg>

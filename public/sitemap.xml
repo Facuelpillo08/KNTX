@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage / Main Landing -->
+  <url>
+    <loc>https://kntx.lab/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://kntx.lab/og-image.webp</image:loc>
+      <image:title>KNTX LAB — Engineered for Concrete</image:title>
+      <image:caption>Colección oficial de ropa técnica urbana y textiles de alta densidad.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Complete Catalog Section -->
+  <url>
+    <loc>https://kntx.lab/#catalog</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Category: Jackets & Outerwear -->
+  <url>
+    <loc>https://kntx.lab/#jackets</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Category: Hoodies & Sweats -->
+  <url>
+    <loc>https://kntx.lab/#hoodies</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Category: Tactical Pants & Cargo -->
+  <url>
+    <loc>https://kntx.lab/#pants</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Product: KX-01 TECHWEAR WINDBREAKER -->
+  <url>
+    <loc>https://kntx.lab/#product-kx-01-windbreaker</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Product: KX-02 HEAVY COTTON HOODIE -->
+  <url>
+    <loc>https://kntx.lab/#product-kx-02-hoodie</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Product: KX-03 TACTICAL CARGO PANTS -->
+  <url>
+    <loc>https://kntx.lab/#product-kx-03-cargo</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Product: KX-04 DEPLOYMENT HOODIE & RIG -->
+  <url>
+    <loc>https://kntx.lab/#product-kx-04-modular-set</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Product: KX-05 TACTICAL CHEST RIG VEST -->
+  <url>
+    <loc>https://kntx.lab/#product-kx-05-tactical-vest</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Product: KX-06 STORM SHELL ANORAK -->
+  <url>
+    <loc>https://kntx.lab/#product-kx-06-storm-anorak</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
