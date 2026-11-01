@@ -12,18 +12,30 @@ export const LegalConsent = () => {
   const [performanceEnabled, setPerformanceEnabled] = useState(true);
 
   useEffect(() => {
-    let timer;
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
-      if (!saved) {
-        // Show banner after brief delay for smooth entrance
-        timer = setTimeout(() => setIsVisible(true), 1200);
-      }
+      if (saved) return;
     } catch {
-      timer = setTimeout(() => setIsVisible(true), 1200);
+      // Proceed if localStorage is unavailable
     }
+
+    // Appear only after user scrolls down, leaving the hero viewpoint clear
+    let hasTriggered = false;
+    const handleScroll = () => {
+      if (hasTriggered) return;
+      if (window.scrollY > 180) {
+        hasTriggered = true;
+        setIsVisible(true);
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    // In case user reloaded midway down the page
+    handleScroll();
+
     return () => {
-      if (timer) clearTimeout(timer);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
